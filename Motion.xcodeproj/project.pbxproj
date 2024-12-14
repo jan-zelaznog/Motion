@@ -13,6 +13,10 @@
 		3D912BBC2D0DE22E00AE5315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D912BBA2D0DE22E00AE5315 /* Main.storyboard */; };
 		3D912BBE2D0DE23000AE5315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D912BBD2D0DE23000AE5315 /* Assets.xcassets */; };
 		3D912BC12D0DE23100AE5315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D912BBF2D0DE23000AE5315 /* LaunchScreen.storyboard */; };
+		3D912BD32D0DE56100AE5315 /* beer-mug-empty.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3D912BD22D0DE56100AE5315 /* beer-mug-empty.svg */; };
+		3D912BD62D0DE5E600AE5315 /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D912BD52D0DE5E600AE5315 /* SVGKit */; };
+		3D912BD82D0DE5E600AE5315 /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3D912BD72D0DE5E600AE5315 /* SVGKitSwift */; };
+		3D912BDB2D0DE7AC00AE5315 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D912BDA2D0DE7AC00AE5315 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		3D912BBD2D0DE23000AE5315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D912BC02D0DE23000AE5315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D912BC22D0DE23100AE5315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D912BD22D0DE56100AE5315 /* beer-mug-empty.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "beer-mug-empty.svg"; sourceTree = "<group>"; };
+		3D912BDA2D0DE7AC00AE5315 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D912BD82D0DE5E600AE5315 /* SVGKitSwift in Frameworks */,
+				3D912BDB2D0DE7AC00AE5315 /* CoreMotion.framework in Frameworks */,
+				3D912BD62D0DE5E600AE5315 /* SVGKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,7 @@
 			children = (
 				3D912BB32D0DE22E00AE5315 /* Motion */,
 				3D912BB22D0DE22E00AE5315 /* Products */,
+				3D912BD92D0DE7AC00AE5315 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +66,7 @@
 		3D912BB32D0DE22E00AE5315 /* Motion */ = {
 			isa = PBXGroup;
 			children = (
+				3D912BD22D0DE56100AE5315 /* beer-mug-empty.svg */,
 				3D912BB42D0DE22E00AE5315 /* AppDelegate.swift */,
 				3D912BB62D0DE22E00AE5315 /* SceneDelegate.swift */,
 				3D912BB82D0DE22E00AE5315 /* ViewController.swift */,
@@ -65,6 +76,14 @@
 				3D912BC22D0DE23100AE5315 /* Info.plist */,
 			);
 			path = Motion;
+			sourceTree = "<group>";
+		};
+		3D912BD92D0DE7AC00AE5315 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D912BDA2D0DE7AC00AE5315 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +102,10 @@
 			dependencies = (
 			);
 			name = Motion;
+			packageProductDependencies = (
+				3D912BD52D0DE5E600AE5315 /* SVGKit */,
+				3D912BD72D0DE5E600AE5315 /* SVGKitSwift */,
+			);
 			productName = Motion;
 			productReference = 3D912BB12D0DE22E00AE5315 /* Motion.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 3D912BA82D0DE22E00AE5315;
+			packageReferences = (
+				3D912BD42D0DE5E600AE5315 /* XCRemoteSwiftPackageReference "SVGKit" */,
+			);
 			productRefGroup = 3D912BB22D0DE22E00AE5315 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D912BD32D0DE56100AE5315 /* beer-mug-empty.svg in Resources */,
 				3D912BC12D0DE23100AE5315 /* LaunchScreen.storyboard in Resources */,
 				3D912BBE2D0DE23000AE5315 /* Assets.xcassets in Resources */,
 				3D912BBC2D0DE22E00AE5315 /* Main.storyboard in Resources */,
@@ -363,6 +390,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D912BD42D0DE5E600AE5315 /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D912BD52D0DE5E600AE5315 /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D912BD42D0DE5E600AE5315 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+		3D912BD72D0DE5E600AE5315 /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D912BD42D0DE5E600AE5315 /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKitSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D912BA92D0DE22E00AE5315 /* Project object */;
 }
